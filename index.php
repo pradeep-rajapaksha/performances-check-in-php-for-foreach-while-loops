@@ -34,11 +34,16 @@
     $time_end = microtime(true);
     $foreach_time = $time_end - $time_start;
 
+    echo "For took: " . number_format($for_time * 1000, 6) . "<br/>";
+    echo "For with count() took: " . number_format($for_count_time * 1000, 6) . "<br/>";
+    echo "Foreach took: " . number_format($foreach_time * 1000, 6) . "<br/>";
+
+    /*
     ////
     // while loop test
     ////
     $time_start = microtime(true);
-    $a=0; while($a++ < sizeof($element));  
+    $a=0; while($a++ < sizeof($element)); 
     $time_end = microtime(true);
     $while_time = $time_end - $time_start;
     
@@ -50,9 +55,8 @@
     $time_end = microtime(true);
     $do_while_time = $time_end - $time_start;
 
-    echo "For took: " . number_format($for_time * 1000, 3) . "<br/>";
-    echo "For with count() took: " . number_format($for_count_time * 1000, 3) . "<br/>";
-    echo "Foreach took: " . number_format($foreach_time * 1000, 3) . "<br/>";
-    echo "While took: " . number_format($while_time * 1000, 3) . "<br/>";
-    echo "Do while took: " . number_format($do_while_time * 1000, 3) . "<br/>";
+    // echo "===================================". "<br/>";
+    // echo "While took: " . number_format($while_time * 1000, 6) . "<br/>";
+    // echo "Do while took: " . number_format($do_while_time * 1000, 6) . "<br/>";
+    */
 ?>
